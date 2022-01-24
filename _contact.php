@@ -21,13 +21,13 @@
             <h1><span>D</span>octeur.</h1>
         </div>
         <ul class="list" id="lista">
-            <li><a href="#"> Home</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.php"> Home</a></li>
+            <li><a href="_contact.php">Contact Us</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Support</a></li>
             <li class="login">
-                <button>Login</button>
-                <a href="##">Login for doctors!</a>
+                <a href="login.php"><button>Login</button></a>
+                <a href="login.php">Login for doctors!</a>
             </li>
         </ul>
         <div class="menu">
