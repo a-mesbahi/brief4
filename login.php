@@ -1,3 +1,20 @@
+<?php
+    // if(isset($_POST['login'])){
+
+    //     $email = $_POST['email'];
+    //     $password = $_POST['code'];
+
+    //     if($email=="rahbani@doctor.com" && $password=="doctor123"){
+    //         header('location:dash.php');
+    //     }
+    // }
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="loginStyle.css">
 </head>
 <body>
     <nav class="nav-barre">
@@ -13,12 +30,12 @@
             <h1><span>D</span>octeur.</h1>
         </div>
         <ul class="list" id="lista">
-            <li><a href="#"> Home</a></li>
+            <li><a href="index.php"> Home</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Support</a></li>
             <li class="login">
-                <button>Login</button>
+                <a href="login.php" id="button">Login</a>
                 <a href="##">Login for doctors!</a>
             </li>
         </ul>
@@ -39,19 +56,21 @@
             <img src="./image/deco.png" alt="" class="deco-pic">
         </div>
         <div class="formule" id="form">
-            <div class="login-formulaire">
-                <h1>Login.</h1>
-                <div class="inputs">
-                    <label for="">Email</label><br>
-                    <input type="text" placeholder="Enter your email" id="email">
+            <form action="dash.php" method="post">
+                <div class="login-formulaire">
+                    <h1>Login.</h1>
+                    <div class="inputs">
+                        <label for="">Email</label><br>
+                        <input type="text" name="email" placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="inputs">
+                        <label for="">Password</label><br>
+                        <input type="password" placeholder="Enter your password" name="code" id="code" >
+                    </div>
+                    <a href="#">Froget passwod?</a>
+                    <input type="submit" value="Login" name="login" class="submit">
                 </div>
-                <div class="inputs">
-                    <label for="">Password</label><br>
-                    <input type="password" placeholder="Enter your password" name="password" >
-                </div>
-                <a href="#">Froget passwod?</a>
-                <input type="submit" value="Login" class="submit">
-            </div>
+            </form>
         </div>
     </div>
     <script src="indexJS.js"></script>

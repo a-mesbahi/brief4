@@ -55,8 +55,12 @@
 .list li {
     list-style: none;   
 }
-li button{
-    font-size: 12px;
+li #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
     border: none;
     color: white;
     background-color:rgb(130, 177, 238) ;
@@ -64,7 +68,7 @@ li button{
     height: 50px;
     border-radius: 5px;
 }
-li button:hover{
+li #button:hover{
     cursor: pointer;
     background-color: rgb(59, 101, 155);
 }
